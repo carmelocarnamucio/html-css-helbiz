@@ -11,21 +11,31 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+li{
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 50px;
+}
 
 
-/* regole di debug */
+
+/* regole di debug
 [class*="col-"] {
   min-height: 100px;
   background-color: lightgreen;
   border: solid 1px  #000;
   padding: 2px;
 }
-
-/* .row .col-6 div  */
-[class*="col-"] > .row > [class*="col-"]{
-  background-color: salmon;
-  border-color: #fff;
-}
+*/
 
 .centra-head-foot{
   padding: 0 10%;
@@ -34,7 +44,7 @@ img {
 /* header */
 
 header {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #nav-large {
@@ -50,8 +60,17 @@ header {
 }
 
 #jumbo {
-  padding-top: 50px;
-  min-height: 300px;
+  background-image: url(../img/jambo.jpg);
+  background-size: cover;
+  min-height: 450px;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+#jumbo a img {
+  width: 20%;
+  margin-top: 15px;
 }
 
 /* regole corpo pagina */
