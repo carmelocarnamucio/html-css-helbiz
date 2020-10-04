@@ -421,8 +421,9 @@ ul.vertical-list {
 
 }
 
+/* media query */
 
-@media all and (max-width:470px) {
+@media all and (max-width: 768px) {
 
   #download #get-app,
   #download #find-us {
