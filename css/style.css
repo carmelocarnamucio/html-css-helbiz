@@ -11,6 +11,10 @@ img {
   height: auto;
 }
 
+.relative {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -26,8 +30,6 @@ li{
   line-height: 50px;
 }
 
-
-
 /* regole di debug
 [class*="col-"] {
   min-height: 100px;
@@ -39,6 +41,7 @@ li{
 
 .centra-head-foot{
   padding: 0 10%;
+  background-color: white;
 }
 
 /* header */
@@ -59,22 +62,151 @@ header {
   display: none;
 }
 
+.logo{
+  text-align: center;
+  line-height: 50px;
+}
+
+/*jumbotron*/
+
 #jumbo {
   background-image: url(../img/jambo.jpg);
   background-size: cover;
-  min-height: 450px;
+  min-height: 500px;
   padding-top: 150px;
   text-align: center;
   color: white;
 }
 
-#jumbo a img {
-  width: 20%;
+#jumbo img {
+  width: 10%;
   margin-top: 15px;
 }
 
+#jumbo h1 {
+  font-size: 50px;
+}
+
+#jumbo p {
+  font-size: 20px;
+}
 /* regole corpo pagina */
 
 .centra-sez1 {
-  padding: 0 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.box{
+  padding: 75px 75px 35px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.centra-sez1 .box h2,
+.centra-sez1 .box h4 {
+  font-weight: 400;
+}
+
+.centra-sez1 .box h2 {
+  margin-bottom: 21px;
+  font-size: 38px;
+}
+
+.centra-sez1 .box h4,
+#smart h4 {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#products .box img {
+  max-width: 100%;
+  width: 230px;
+  margin-top: 21px;
+}
+
+/* HOW WORKS */
+
+.anzianoBack {
+  height: 400px;
+  background-image: url("../img/HelbizBanner.jpg");
+  background-position: left;
+  background-size: cover;
+}
+
+.anziano img {
+  position: relative;
+  top: 25%;
+  height: 500px;
+}
+
+.leftAligned {
+  text-align: left;
+}
+
+.marginTop1 {
+  margin-top: 25px;
+}
+
+.center-row {
+  text-align: center;
+}
+
+/* sezione smart mobility */
+
+.scooter {
+  position: relative;
+  background-image: url("../img/scooter-bg.jpg");
+  background-size: cover;
+  background-position: right;
+  height: 500px;
+  margin-top: 150px;
+  color: white;
+}
+
+.scooter a {
+  color: white;
+}
+
+.scooter h2 {
+  font-size: 60px;
+  margin: 10px 10px;
+}
+
+.scooter h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+.helbizapp {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding-top: 10px;
+  margin-top: 280px;
+  height: 500px;
+  background: rgb(54,70,121);
+}
+
+.sectionLow a {
+  color: white;
+}
+
+.helbizapp img {
+  position: absolute;
+  height: 400px;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cityBack {
+  margin-top: 280px;
+  padding-top: 1rem;
+  color: white;
+  height: 500px;
+  background-size: cover;
+  background-image: url("../img/city.jpg");
 }
